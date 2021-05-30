@@ -30,4 +30,17 @@ def censor(sentence, curses)
     sentence.join(" ")
 end
 
-puts censor("Gosh darn it", ["gosh", "darn", "shoot"])
+def power_of_two?(num)
+    while true
+        if num == 1
+            return true
+        end
+
+        if num % 2 == 0
+            num /= 2
+        else
+            return false
+        end
+    end
+
+end
